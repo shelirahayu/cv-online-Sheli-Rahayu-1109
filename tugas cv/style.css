@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: justify;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2c3e50;
+    border-radius: 10px 10px 0 0;
+}
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek 3D */
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk gambar profil */
+}
+
+/* Efek 3D saat kursor diarahkan ke gambar profil */
+.profile-pic:hover img {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg); /* Efek angkat dan rotasi 3D */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam */
+}
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Gaya dasar untuk kotak Personal Information, Education, dan Experience */
+.personal-info, .education, .experience {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek 3D saat kursor diarahkan ke kotak */
+.personal-info:hover, .education:hover, .experience:hover {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg); /* Efek naik dan sedikit miring */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam untuk efek 3D */
+}
+
+/* Header pada setiap kotak */
+.personal-info h2, .education h2, .experience h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Teks dalam setiap kotak */
+.personal-info p, .education p, .experience p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+strong {
+    color: #2c3e50;
+}
+
+/* Gaya dasar untuk footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2c3e50;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+}
+
+/* Gaya dasar untuk tautan di dalam footer */
+.social-links {
+    display: inline-block; /* Agar tautan berada dalam satu baris */
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; /* Mengurangi margin agar tidak terlalu lebar */
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 8px 12px; /* Ukuran kotak lebih kecil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek hover */
+    border-radius: 8px; /* Sudut kotak membulat */
+}
+
+/* Efek hover untuk Instagram */
+.social-link.instagram:hover {
+    transform: translateY(-5px) perspective(300px) rotateY(10deg); /* Efek 3D pada hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Bayangan lebih dalam */
+    background-color: #000000; /* Warna latar belakang berubah untuk Instagram */
+}
+
+/* Efek hover untuk GitHub */
+.social-link.github:hover {
+    transform: translateY(-5px) perspective(300px) rotateY(-10deg); /* Efek 3D pada hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Bayangan lebih dalam */
+    background-color: #000000; /* Warna latar belakang berubah untuk GitHub */
+}
+
+/* Ikon font awesome */
+.social-link i {
+    margin-right: 8px;
+    font-size: 1.5em; /* Ukuran ikon font awesome */
+}
